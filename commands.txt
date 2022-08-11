@@ -1,0 +1,34 @@
+git version// to know version of git
+git config --global  user.name
+git config --global  user.email
+mkdir folder //create new folder
+cd folder //navigation
+ls//show all files
+ls - la//show all files+hidden
+dir - показать содержимое папки windows
+git status
+git add *file*- отслеживать указанный файл
+git commit -m 'Some comment in commit' //создает коммит приложения из файлов, который висят в отслеживание(добавленные через add)
+git log - отображает коммиты
+git show - показывает объект в подробностях, например хэш коммита
+git checkout  *file* - откатить изменения файла до состояния последнего коммита
+git diff - показывает изменения в файлах с последнего add
+git diff --staged - показывает изменения в файлах с последнего коммита
+git commit -am 'some text' - берет все файлы под версионным контролем сделай с ними add а потом закоммить
+git mv *file* *src/newfilename* - перемещает и переименовывает файл
+git rm *file*- удаление файла уже закоммиченного из каталога, удаляет сразу до нового коммита
+git rm --cached *file* - удаление файла из коммита, но оставляет в каталоге (делает его untracked)
+////////////////////////////////
+git branch *newBranchName* - создание новой ветки
+git branch -a -показывает какие ветки есть
+git checkout *branch* - переключает ветки
+git checkout -b *newBranchName* -создает и переходит на новую ветку
+git checkout -b *newBranchName* *хэш сумма коммита* - создает ветку от того коммита который указан, а не от последнего
+git merge *branchName* - схлопывает ветки
+git branch -d *branchName* - удаляет ветку
+git reset --hard *хэш сумма коммита*  - удаляет из видимости все до указанного коммита, переводит head к этому коммиту
+//////////
+git remote add origin *hss* - установить в папку гит-репозиторий
+git push origin master - отправить изменения на удаленный репозиторий с ветки мастер
+
+
